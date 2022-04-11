@@ -30,6 +30,64 @@ header{
     overflow: hidden;
 }
 
+#mainbox{
+    position: absolute;
+    top: 30%;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 32px;
+    visibility: hidden;
+    cursor: pointer;
+    transition: all 0.6s;
+
+
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: white;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidemenu .transparent,
+.sidemenu .black{
+    width: 100px;
+    font-size: 0.8rem;
+}
+
+.sidemenu .flex-container{
+    justify-content: space-evenly;
+    font-weight: 600;
+}
+
+.sidemenu .location{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.sidemenu .closebtn{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+
 .main{
     margin-top: 88px;
 }
@@ -144,9 +202,10 @@ section{
     padding: 50px 0;
 }
 .section1 img{
-    height: 100%;
     width: 100%;
-    
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section1-text{
@@ -509,6 +568,149 @@ footer .flex-item ul li a:hover{
 }
 
 
+
+@media screen and (max-width: 900px) {
+
+    #mainbox {
+        top: 25%;
+        visibility: visible;
+
+    }
+
+    .section1-text {
+        position: absolute;
+        width: 200px;
+        top: 15%;
+        left: 10%;
+        line-height: 2rem;
+
+    }
+
+    .main {
+        margin-top: 78px;
+    }
+
+    .section1-text h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .section1-text p {
+        font-size: 0.7rem;
+    }
+
+    .section1-text a {
+        font-size: 0.7rem;
+    }
+
+    .section1 img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    nav .flex-item-1 .flex-item:nth-child(2),
+    nav .flex-item-2 {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #mainbox {
+        visibility: visible;
+    
+    }
+
+    .section2 .flex-container,
+    .section4 .flex-container,
+    .section5 .flex-container,
+    .section7 .flex-container,
+    footer .flex-container
+    {
+         display: block;
+    }
+
+    .flex-column{
+        padding-bottom: 2rem;
+    }
+
+
+
+    .section2, .section2 .section-header,
+    .section3,
+    .section4, .section4 .section-header,
+    .section5, .section5 .section-header, .section5 .flex-container,
+    .section6, .section6 .section-header,
+    .section7 .flex-item, .section7>p{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .section1-text{
+        position: absolute;
+        width: 200px;
+        top: 25%;
+        left: 10%;
+        line-height: 1.4rem;
+        
+    }
+
+    .section3 .flex-item a{
+        font-size: 1.2rem;
+       
+    }
+
+
+    .section3 .flex-item i{
+        font-size: 0.5rem;
+        
+    }
+
+    .section2 h2,
+    .section3 h2,
+    .section4 h2,
+    .section5 h2,
+    .section6 h2{
+        font-size: 1.3rem;
+    }
+
+    .section2 h3,
+    .section4 h3,
+    .section5 h3, .section5>p{
+        font-size: 1.1rem;
+    }
+
+    .section1-text h1{
+        font-size: 1rem;
+
+    }
+
+    .section1-text p{
+        font-size: 0.5rem;
+    }
+
+    .section1-text a{
+        font-size: 0.5rem;
+    }
+
+    .section1 img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+    .footer-social .flex-container{
+        display: flex;
+    }
+
+    .footer-legal span{
+        visibility: hidden;
+    }
+}
 
 
 
