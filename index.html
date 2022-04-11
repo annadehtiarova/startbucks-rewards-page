@@ -15,6 +15,20 @@
 <body>
     
     <header>
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+        <div id="menu" class="sidemenu">
+            <a href="">Menu</a>
+            <a href="">Rewards</a>
+            <a href="">Gift Cards</a>
+            <hr>
+            <div class="flex-container">
+            <a href="" class="transparent">Sign in</a>
+            <a href="" class="black">Join now</a>
+            </div>
+            <a href="" class="location"><i class="fa-solid fa-location-dot"></i>Find a store</a>
+            <a href="" class="closebtn" onclick="closeFunction()">&times;</a>
+            
+        </div>
     <nav class="flex-container white space-between">
         <div class="flex-item-1">
         <div class="flex-item">
@@ -78,8 +92,10 @@
         <div class="flex-container">
             <div class="flex-item flex-column">
                 <div>1</div>
+                <span>
                 <h3>Create an account</h3>
                 <p>To get started, <a href="">join now</a>. You can also <a href="">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+                </span>
             </div>
             <div class="flex-item flex-column">
                 <div>2</div>
@@ -103,7 +119,7 @@
             <div class="flex-container space-evenly">
                 <div class="flex-item"><a>25<i class="fa-solid fa-star"></i></a></div>
                 <div class="flex-item"><a>50<i class="fa-solid fa-star"></i></a></div>
-                <div class="flex-item"><a>150</h2><i class="fa-solid fa-star"></i></a></div>
+                <div class="flex-item"><a>150<i class="fa-solid fa-star"></i></a></div>
                 <div class="flex-item"><a>200<i class="fa-solid fa-star"></i></a></div>
                 <div class="flex-item"><a>400<i class="fa-solid fa-star"></i></a></div>
             </div>
@@ -449,7 +465,17 @@
 
     </footer>
 
-
     </div>
+
+
+    <script type="text/javascript">
+        function openFunction(){
+            document.getElementById("menu").style.width="300px"
+        }
+        function closeFunction(){
+            document.getElementById("menu").style.width="0px"
+        }
+
+    </script>
 </body>
 </html>
