@@ -712,6 +712,10 @@ footer .flex-item ul li a:hover{
     .footer-social .flex-container{
         display: flex;
     }
+    
+    .footer-social li a svg:hover{
+    outline: 9px solid lightgrey;
+    border-radius: 50%;
 
     .footer-legal span{
         visibility: hidden;
